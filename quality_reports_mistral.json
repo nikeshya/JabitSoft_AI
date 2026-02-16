@@ -1,0 +1,129 @@
+[
+  {
+    "session_id": "session-1761525127868-vgm3g9c",
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 95,
+    "summary": "The user wanted to exchange an incorrectly ordered item that hadn't been delivered yet. The assistant gathered order details, explained exchange options, and submitted a support ticket for the store error. The user agreed to proceed and provided contact info, resulting in a resolution with a ticket ID and confirmation of a follow-up call.",
+    "generated_at": "2026-02-13T07:56:39.481Z"
+  },
+  {
+    "session_id": "session-1763421553380-yxcpnid",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "Failed to connect user to a human agent",
+      "Repeated identical response to user's request"
+    ],
+    "quality_score": 60,
+    "summary": "The user requested to chat with a human agent, but the assistant only provided contact methods without offering to connect to a live representative. The assistant accurately shared support channels but did not resolve the user's request to speak with a human. The problem remained unresolved by the end of the conversation.",
+    "generated_at": "2026-02-13T07:57:21.708Z"
+  },
+  {
+    "session_id": "session-1763422040022-81orvrq",
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 90,
+    "summary": "Jovita requested immediate delivery for her order despite the scheduled date of November 24, 2025. The assistant explained the delivery timeline and confirmed they would send a text with the delivery window. The issue wasn't resolved as the delivery date couldn't be changed, but the user expressed satisfaction with the information provided.",
+    "generated_at": "2026-02-13T07:58:12.905Z"
+  },
+  {
+    "session_id": "session-1763422665024-j7zqjw2",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": false,
+    "issues": [
+      "Ambiguous user query requiring more specific details",
+      "No explicit confirmation of resolution"
+    ],
+    "quality_score": 85,
+    "summary": "The user inquired about delivery options, and the assistant provided general information on shipping times, couriers, and tracking methods. The problem was not fully resolved due to the vague nature of the user's request, and the conversation did not conclude with a clear resolution.",
+    "generated_at": "2026-02-13T07:58:52.025Z"
+  },
+  {
+    "session_id": "session-1763422905513-4f6pe7e",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "The assistant could not directly arrange delivery as requested"
+    ],
+    "quality_score": 70,
+    "summary": "The user requested to arrange delivery and provided their order ID and email. The assistant gathered the necessary information but explained they couldn't directly book delivery, instead directing the user to a track order portal. The issue remains unresolved as the user wasn't able to complete the request themselves.",
+    "generated_at": "2026-02-13T07:59:23.356Z"
+  },
+  {
+    "session_id": "session-1763423518396-exg9i4w",
+    "user_satisfaction": "low",
+    "bot_accuracy": "medium",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "The assistant failed to provide the mattress dimensions for the Estelle Mid Beige King Bed despite having access to the product data",
+      "The assistant incorrectly stated the product wasn't found when it was actually available in the product catalog"
+    ],
+    "quality_score": 50,
+    "summary": "The user asked about mattress size compatibility for the Estelle Mid Beige King Bed. The assistant initially attempted to retrieve dimensions but later incorrectly claimed the product wasn't found, failing to provide the required measurement information.",
+    "generated_at": "2026-02-13T08:01:00.738Z"
+  },
+  {
+    "session_id": "session-1763423304974-4tjoofd",
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 95,
+    "summary": "The user inquired about delivery times for the Sam Pierre table. The assistant requested the postal code, which was provided, and then gave a delivery estimate between Dec 02-10, 2025. The problem was resolved with clear information.",
+    "generated_at": "2026-02-13T08:01:29.507Z"
+  },
+  {
+    "session_id": "session-1763423679567-lbwttom",
+    "user_satisfaction": "low",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "Failed to resolve delivery timing request",
+      "User expressed anxiety about work schedule conflict",
+      "Unable to make courier requests on behalf of user"
+    ],
+    "quality_score": 60,
+    "summary": "The user requested an early morning chair delivery to meet work commitments but the assistant could not modify delivery times or contact couriers directly. The assistant provided tracking information and contact details for customer support, but the delivery timing issue remained unresolved, leaving the user anxious about their work schedule.",
+    "generated_at": "2026-02-13T08:02:30.521Z"
+  },
+  {
+    "session_id": "session-1764308636158-277xtek",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "The assistant did not confirm order cancellation, leaving the user's request unresolved"
+    ],
+    "quality_score": 85,
+    "summary": "The user sought clarification on cancelling a discounted order and reordering. The assistant provided details about credit notes, cancellation policies, and balance handling, but the user ultimately decided to return later without confirming cancellation. The issue remains unresolved.",
+    "generated_at": "2026-02-13T08:03:33.946Z"
+  },
+  {
+    "session_id": "session-1764309018004-cj65e6h",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 85,
+    "summary": "The user initially searched for a specific abstract painting that wasn't available, so the assistant provided alternative options. The user then asked about preorder item details, cancellation policies, and return procedures. The assistant accurately explained the preorder ETA process, cancellation terms, and return guidelines for the Adelaide store, resolving the user's concerns.",
+    "generated_at": "2026-02-13T08:04:55.838Z"
+  }
+]

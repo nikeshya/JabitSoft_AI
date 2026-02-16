@@ -1,0 +1,105 @@
+[
+  {
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 80,
+    "summary": "The chatbot provided relevant and accurate information about green velvet sofas, including multiple options with different designs and prices. The user's query was effectively addressed.",
+    "session_id": "session-1761488409401-iz2u4uh",
+    "model_used": "llama3",
+    "generated_at": "2026-02-13T11:42:26.872298"
+  },
+  {
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 80,
+    "summary": "The user initiated a standard greeting and the chatbot responded promptly with a friendly hello. The conversation started well, but no specific issue was resolved.",
+    "session_id": "session-1761518813065-zaj9jc2",
+    "model_used": "llama3",
+    "generated_at": "2026-02-13T11:43:36.696918"
+  },
+  {
+    "user_satisfaction": "high",
+    "bot_accuracy": "medium",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 75,
+    "summary": "The chatbot responded promptly and initiated the conversation effectively, but could have provided more specific options for chair types.",
+    "session_id": "session-1761522626596-rldnw6o",
+    "model_used": "llama3",
+    "generated_at": "2026-02-13T11:44:27.036656"
+  },
+  {
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 95,
+    "summary": "The user inquired about rug return policies, and the bot provided clear, accurate information on the policy, including in-store return options and the 7-day window, leading to a satisfactory resolution.",
+    "session_id": "session-1761523541195-jcuvnkw",
+    "model_used": "qwen3:8b",
+    "generated_at": "2026-02-13T11:46:12.159949"
+  },
+  {
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      {
+        "type": "unanswered question",
+        "question": "whats the warranty on the foam for sofas"
+      }
+    ],
+    "quality_score": 85,
+    "summary": "The assistant provided a clear and accurate response, but did not fully answer the user's question about warranty information. The issue was partially resolved.",
+    "session_id": "session-1761524036797-y0khynv",
+    "model_used": "llama3",
+    "generated_at": "2026-02-13T11:47:16.207011"
+  },
+  {
+    "user_satisfaction": "high",
+    "bot_accuracy": "medium",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 80,
+    "summary": "The bot effectively assisted the user in booking a delivery date, providing clear instructions and explanations. However, it could not directly confirm the expected delivery date due to system limitations.",
+    "session_id": "session-1761524511430-p2z4c9u",
+    "model_used": "llama3",
+    "generated_at": "2026-02-13T11:48:48.143937"
+  },
+  {
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [
+      "User mentioned 'testing' which may indicate lack of genuine need"
+    ],
+    "quality_score": 95,
+    "summary": "The bot accurately provided delivery date information and resolution steps, but the user's 'testing' comment suggests potential dissatisfaction. The main issue was resolved effectively.",
+    "session_id": "session-1761525085325-y0mtfpj",
+    "model_used": "qwen3:8b",
+    "generated_at": "2026-02-13T11:49:38.955779"
+  },
+  {
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 95,
+    "summary": "The user requested to exchange a wrongly ordered item. The bot accurately guided the user through the process, submitted a support ticket, and arranged for a follow-up call. The issue was resolved with clear communication and appropriate action.",
+    "session_id": "session-1761525127868-vgm3g9c",
+    "model_used": "qwen3:8b",
+    "generated_at": "2026-02-13T11:50:50.699439"
+  }
+]

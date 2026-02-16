@@ -1,0 +1,125 @@
+[
+  {
+    "session_id": "session-1761525127868-vgm3g9c",
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 95,
+    "summary": "The user wanted to change an undelivered order due to a store error. The assistant gathered order details, explained exchange options, and submitted a support ticket for the incorrect item. The problem was resolved with the user agreeing to the ticket and confirming a call request.",
+    "generated_at": "2026-02-13T07:35:58.039Z"
+  },
+  {
+    "session_id": "session-1763421553380-yxcpnid",
+    "user_satisfaction": "low",
+    "bot_accuracy": "medium",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "The assistant failed to connect the user to a human agent and instead provided contact details without offering escalation"
+    ],
+    "quality_score": 50,
+    "summary": "The user requested to chat with a human agent, but the assistant only provided contact methods without resolving the request. The issue remains unresolved as the user was not connected to a human. The assistant's response was accurate but incomplete in addressing the user's need.",
+    "generated_at": "2026-02-13T07:36:39.434Z"
+  },
+  {
+    "session_id": "session-1763422040022-81orvrq",
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 95,
+    "summary": "Jovita confirmed her order was ready for delivery and expressed eagerness for the package. The assistant provided delivery details, clarified the scheduled dispatch date, and offered tracking options. The issue was resolved with the user expressing satisfaction with the information provided.",
+    "generated_at": "2026-02-13T07:37:41.213Z"
+  },
+  {
+    "session_id": "session-1763422665024-j7zqjw2",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": false,
+    "issues": [],
+    "quality_score": 85,
+    "summary": "The user inquired about delivery times and processes. The assistant provided detailed information about shipping lead times, delivery partners, and tracking options. The problem was not explicitly resolved as the user did not confirm their specific issue was addressed.",
+    "generated_at": "2026-02-13T07:38:29.765Z"
+  },
+  {
+    "session_id": "session-1763422905513-4f6pe7e",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "Assistant could not fulfill delivery arrangement request"
+    ],
+    "quality_score": 70,
+    "summary": "The user requested to arrange delivery and provided their order ID and email. The assistant gathered the required information but informed the user they couldn't schedule delivery directly, redirecting them to a portal. The issue remains unresolved as the request wasn't completed.",
+    "generated_at": "2026-02-13T07:38:59.454Z"
+  },
+  {
+    "session_id": "session-1763423518396-exg9i4w",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "medium",
+    "issue_resolved": false,
+    "chat_complete": false,
+    "issues": [
+      "The assistant initially claimed to fetch dimensions but later stated the product couldn't be found, creating confusion",
+      "The assistant provided incorrect information by suggesting alternative colors instead of resolving the mattress size query"
+    ],
+    "quality_score": 55,
+    "summary": "The user asked about mattress size for the Estelle Mid Beige King Bed. The assistant first attempted to retrieve dimensions but then incorrectly stated the product wasn't found, offering alternative color options instead. The issue remains unresolved as the user's specific size request wasn't addressed.",
+    "generated_at": "2026-02-13T07:39:54.577Z"
+  },
+  {
+    "session_id": "session-1763423304974-4tjoofd",
+    "user_satisfaction": "high",
+    "bot_accuracy": "high",
+    "issue_resolved": true,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 95,
+    "summary": "The user inquired about delivery times for a Sam Pierre table. The assistant requested the postal code and provided an estimated delivery date range after receiving it. The issue was resolved with clear information.",
+    "generated_at": "2026-02-13T07:40:25.430Z"
+  },
+  {
+    "session_id": "session-1763423679567-lbwttom",
+    "user_satisfaction": "low",
+    "bot_accuracy": "medium",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "Failed to resolve delivery time adjustment request",
+      "Did not proactively offer alternative solutions beyond standard support contact",
+      "Repeatedly directed user to contact support instead of providing actionable resolution"
+    ],
+    "quality_score": 55,
+    "summary": "The user requested an early morning chair delivery to meet work commitments, but the assistant could not adjust the scheduled delivery date and repeatedly directed them to contact customer support. The issue remains unresolved despite the user's expressed anxiety about the delivery timing.",
+    "generated_at": "2026-02-13T07:41:25.396Z"
+  },
+  {
+    "session_id": "session-1764308636158-277xtek",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [],
+    "quality_score": 90,
+    "summary": "The user wanted to cancel their discounted order and reorder, but the assistant explained that the invoice is already on promotional pricing with no further price matches. The assistant provided details about cancellation, credit notes, and credit balance usage, but the user hasn't confirmed cancellation. The chat ended as the user opted to revisit later.",
+    "generated_at": "2026-02-13T07:42:37.903Z"
+  },
+  {
+    "session_id": "session-1764309018004-cj65e6h",
+    "user_satisfaction": "medium",
+    "bot_accuracy": "high",
+    "issue_resolved": false,
+    "chat_complete": true,
+    "issues": [
+      "The assistant failed to locate the specific product 'Winter Solstice Abstract Painting' and provided alternative options instead of resolving the original request"
+    ],
+    "quality_score": 70,
+    "summary": "The user initially requested the 'Winter Solstice Abstract Painting' which the assistant couldn't find, instead offering alternative paintings. The assistant then addressed preorder ETA, cancellation policies, and return procedures. The original product issue remained unresolved, but other queries were handled appropriately.",
+    "generated_at": "2026-02-13T07:44:10.739Z"
+  }
+]

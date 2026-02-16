@@ -1,0 +1,8 @@
+scikit-learn
+pandas
+numpy
+nltk
+textblob
+sentence-transformers
+faiss-cpu
+ollama
