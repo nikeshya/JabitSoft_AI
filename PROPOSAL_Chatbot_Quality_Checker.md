@@ -1,7 +1,7 @@
 # 📋 Proposal: AI-Powered Chatbot Quality Checker
 
 **Project:** Chat-Evolution-AI — Automated Quality Analysis System  
-**Author:** Jay Agrawal & Nikesh Yadav
+**Author:** Nikesh Kumar Yadav & Jay Agrawal 
 **Date:** February 18, 2026  
 **Status:** Ready for Pipeline Integration  
 
@@ -102,8 +102,8 @@ The system uses a **two-tier hybrid approach** combining the strengths of two mo
 
 | Model        | Strength                          | Weakness                            |
 |--------------|-----------------------------------|-------------------------------------|
-| **Qwen3:8b** | ⚡ Fast inference (~10s per chat) | Struggles with long/complex chats   |
-| **Llama3**   | 🎯 Accurate, handles nuance well  | Slower inference (~30–60s per chat) |
+| **Qwen3:8b** |  Fast inference (~10s per chat) | Struggles with long/complex chats   |
+| **Llama3**   |  Accurate, handles nuance well  | Slower inference (~30–60s per chat) |
 
 The hybrid approach uses **Qwen3:8b for speed** on the majority of straightforward chats, and **Llama3 for depth** only when quality concerns are flagged. This gives us the **best of both worlds**: speed at scale with accuracy where it matters.
 
@@ -178,10 +178,10 @@ All models were benchmarked on the same chat dataset:
 
 | Model      | Sessions Processed | Speed           | Accuracy | Long Chat Handling | Recommended        |
 |------------|--------------------|-----------------|----------|--------------------|--------------------|
-| Qwen3:8b   | 7,625              | ⚡ Fast         | Good     | ❌ Struggles      | Primary only       |
-| Llama3     | 7,625              | 🐢 Slow         | ✅ High  | ✅ Strong         | Fallback           |
-| Mistral    | 10 (sample)        | Medium          | Good      | Medium            | Not selected       |
-| **Hybrid** | 8 (pilot)          | ⚡ Fast overall | ✅ High  | ✅ Strong          | **✅ Selected**   |
+| Qwen3:8b   | 7,625              |  Fast           | Good       | Struggles        | Primary only       |
+| Llama3     | 7,625              |  Slow           | High       | Strong           | Fallback           |
+| Mistral    | 10 (sample)        |  Medium         | Good       | Medium           | Not selected       |
+| **Hybrid** | 8 (pilot)          |  Fast overall   | High       | Strong           | Selected           |
 
 
 ### 5.2 Sample Output (Hybrid Model)
@@ -310,9 +310,9 @@ All models were benchmarked on the same chat dataset:
 
 | Approach                               | Daily Cost       | Scalability                                |
 |----------------------------------------|------------------|--------------------------------------------|
-| Manual review (2 FTEs)                 | ~$400/day        | ❌ Limited to ~200 chats/day               |
-| Cloud API (GPT-4)                      | ~$50–150/day     | ⚠️ Scales but expensive                    |
-| **This solution (Ollama local)**       | **~$0/day**      | **✅ Full coverage, zero marginal cost**   |
+| Manual review (2 FTEs)                 | ~$400/day        | Limited to ~200 chats/day                  |
+| Cloud API (GPT-4)                      | ~$50–150/day     | Scales but expensive                       |
+| **This solution (Ollama local)**       | **~$0/day**      | Full coverage, zero marginal cost          |
 
 ---
 
