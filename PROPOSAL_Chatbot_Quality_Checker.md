@@ -1,7 +1,7 @@
 # 📋 Proposal: AI-Powered Chatbot Quality Checker
 
 **Project:** Chat-Evolution-AI — Automated Quality Analysis System  
-**Author:** Jayag  
+**Author:** Jay Agrawal & Nikesh Yadav
 **Date:** February 18, 2026  
 **Status:** Ready for Pipeline Integration  
 
@@ -14,13 +14,13 @@ This proposal presents an **AI-powered quality analysis system** designed to eva
 The system has been **proven at scale** — successfully analyzing **7,625 chat sessions** from historical data. It produces structured quality reports with actionable metrics, making it ready for integration into the company's daily pipeline as an automated quality assurance step.
 
 ### Key Outcomes
-| Metric | Value |
-|--------|-------|
-| Total Sessions Analyzed | 7,625 |
-| Models Evaluated | Qwen3:8b, Llama3, Mistral, Qwen3:8b (standalone) |
-| Final Architecture | Hybrid (Qwen3:8b primary + Llama3 fallback) |
-| Output Format | JSON + CSV reports |
-| Infrastructure | Ollama (local, no cloud API costs) |
+| Metric                  | Value                                            |
+|-------------------------|--------------------------------------------------|
+| Total Sessions Analyzed | 7,625                                            |
+| Models Evaluated        | Qwen3:8b, Llama3, Mistral, Qwen3:8b (standalone) |
+| Final Architecture      | Hybrid (Qwen3:8b primary + Llama3 fallback)      |
+| Output Format           | JSON + CSV reports                               |
+| Infrastructure          | Ollama (local, no cloud API costs)               |
 
 ---
 
@@ -57,22 +57,22 @@ The quality checker analyzes each chat session and produces a structured report 
 
 ### 3.2 Issue Categories Detected
 
-| Issue Type | Description |
-|-----------|-------------|
-| **Hallucination** | Bot generated factually incorrect or fabricated information |
-| **Wrong Intent** | Bot misunderstood the user's actual question or need |
-| **Unanswered Question** | User asked a question that the bot failed to address |
+| Issue Type                | Description                                                  |
+|---------------------------|--------------------------------------------------------------|
+| **Hallucination**         | Bot generated factually incorrect or fabricated information  |
+| **Wrong Intent**          | Bot misunderstood the user's actual question or need         |
+| **Unanswered Question**   | User asked a question that the bot failed to address         |
 | **Incomplete Resolution** | Bot started addressing the issue but didn't fully resolve it |
-| **Low Satisfaction** | Overall interaction left the user unsatisfied |
+| **Low Satisfaction**      | Overall interaction left the user unsatisfied                |
 
 ### 3.3 Quality Score Breakdown
 
-| Score Range | Classification | Action |
-|-------------|---------------|--------|
-| 90–100 | ✅ Excellent | No action needed |
-| 70–89 | ⚠️ Acceptable | Monitor for patterns |
-| 50–69 | 🔶 Needs Improvement | Review and retrain intents |
-| 0–49 | 🔴 Critical | Immediate investigation required |
+| Score Range | Classification        | Action                          |
+|-------------|-----------------------|---------------------------------|
+| 90–100      | ✅ Excellent         | No action needed                 |
+| 70–89       | ⚠️ Acceptable        | Monitor for patterns             |
+| 50–69       | 🔶 Needs Improvement | Review and retrain intents       |
+| 0–49        | 🔴 Critical          | Immediate investigation required |
 
 ---
 
@@ -100,10 +100,10 @@ The system uses a **two-tier hybrid approach** combining the strengths of two mo
 
 **Why Hybrid?**
 
-| Model | Strength | Weakness |
-|-------|----------|----------|
-| **Qwen3:8b** | ⚡ Fast inference (~10s per chat) | Struggles with long/complex chats |
-| **Llama3** | 🎯 Accurate, handles nuance well | Slower inference (~30–60s per chat) |
+| Model        | Strength                          | Weakness                            |
+|--------------|-----------------------------------|-------------------------------------|
+| **Qwen3:8b** | ⚡ Fast inference (~10s per chat) | Struggles with long/complex chats   |
+| **Llama3**   | 🎯 Accurate, handles nuance well  | Slower inference (~30–60s per chat) |
 
 The hybrid approach uses **Qwen3:8b for speed** on the majority of straightforward chats, and **Llama3 for depth** only when quality concerns are flagged. This gives us the **best of both worlds**: speed at scale with accuracy where it matters.
 
@@ -144,27 +144,29 @@ Raw Chat Logs (JSONL, ~14MB)
 
 ### 4.3 Technology Stack
 
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| Model Runtime | **Ollama** (local) | Hosts LLMs locally, zero cloud cost |
-| Primary Model | **Qwen3:8b** | Fast quality analysis |
-| Secondary Model | **Llama3** (8B) | Deep analysis for flagged sessions |
-| Batch Processor | **Python** (requests, tqdm) | Orchestrates analysis pipeline |
-| JS Integration | **Node.js** (ES modules) | Alternative integration module |
-| Data Cleaning | **Python** (json, pandas) | Preprocessing raw chat logs |
-| Embeddings | **sentence-transformers** | Semantic search for RAG index |
+| Component        | Technology                           | Purpose                               |
+|------------------|--------------------------------------|---------------------------------------|
+| Model Runtime    | **Ollama** (local)                   | Hosts LLMs locally, zero cloud cost   |
+| Primary Model    | **Qwen3:8b**                         | Fast quality analysis                 |
+| Secondary Model  | **Llama3** (8B)                      | Deep analysis for flagged sessions    |
+| Batch Processor  | **Python** (requests, tqdm)          | Orchestrates analysis pipeline        |
+| JS Integration   | **Node.js** (ES modules)             | Alternative integration module        |
+| Data Cleaning    | **Python** (json, pandas)            | Preprocessing raw chat logs           |
+| Embeddings       | **sentence-transformers**            | Semantic search for RAG index         |
+
 
 ### 4.4 Key System Files
 
-| File | Purpose |
-|------|---------|
-| `hybrid_batch.py` | **Core pipeline** — Hybrid model batch processor |
-| `batch_qwen3_json.py` | Qwen3-only batch processor (standalone mode) |
-| `quality_checker.js` | JS module for single-session analysis |
-| `batch_generate_reports.js` | JS batch runner (targeted sessions) |
-| `offline_chat_analyzer.py` | RAG index builder for semantic retrieval |
-| `clean_data.py` | Data preprocessing and cleaning |
-| `search_service.py` | Product search utility |
+| File                          | Purpose                                                  |
+|-------------------------------|----------------------------------------------------------|
+| `hybrid_batch.py`             | **Core pipeline** — Hybrid model batch processor         |
+| `batch_qwen3_json.py`         | Qwen3-only batch processor (standalone mode)             |
+| `quality_checker.js`          | JS module for single-session analysis                    |
+| `batch_generate_reports.js`   | JS batch runner (targeted sessions)                      |
+| `offline_chat_analyzer.py`    | RAG index builder for semantic retrieval                 |
+| `clean_data.py`               | Data preprocessing and cleaning                          |
+| `search_service.py`           | Product search utility                                   |
+
 
 ---
 
@@ -174,12 +176,13 @@ Raw Chat Logs (JSONL, ~14MB)
 
 All models were benchmarked on the same chat dataset:
 
-| Model | Sessions Processed | Speed | Accuracy | Long Chat Handling | Recommended |
-|-------|-------------------|-------|----------|--------------------|-------------|
-| Qwen3:8b | 7,625 | ⚡ Fast | Good | ❌ Struggles | Primary only |
-| Llama3 | 7,625 | 🐢 Slow | ✅ High | ✅ Strong | Fallback |
-| Mistral | 10 (sample) | Medium | Good | Medium | Not selected |
-| **Hybrid** | 8 (pilot) | ⚡ Fast overall | ✅ High | ✅ Strong | **✅ Selected** |
+| Model      | Sessions Processed | Speed           | Accuracy | Long Chat Handling | Recommended        |
+|------------|--------------------|-----------------|----------|--------------------|--------------------|
+| Qwen3:8b   | 7,625              | ⚡ Fast         | Good     | ❌ Struggles      | Primary only       |
+| Llama3     | 7,625              | 🐢 Slow         | ✅ High  | ✅ Strong         | Fallback           |
+| Mistral    | 10 (sample)        | Medium          | Good      | Medium            | Not selected       |
+| **Hybrid** | 8 (pilot)          | ⚡ Fast overall | ✅ High  | ✅ Strong          | **✅ Selected**   |
+
 
 ### 5.2 Sample Output (Hybrid Model)
 
@@ -248,15 +251,16 @@ All models were benchmarked on the same chat dataset:
 
 ### 6.2 Infrastructure Requirements
 
-| Resource | Requirement | Notes |
-|----------|------------|-------|
-| **GPU** | NVIDIA GPU with ≥8GB VRAM | For running Ollama models locally |
-| **RAM** | ≥16GB | For loading chat data + model inference |
-| **Disk** | ~20GB free | Model weights + reports storage |
-| **Ollama** | v0.1.x+ installed | Model runtime |
-| **Python** | 3.10+ | Pipeline scripts |
-| **Node.js** | 18+ (optional) | If using JS integration module |
-| **Network** | Local only | No external API calls required |
+| Resource    | Requirement                      | Notes                                   |
+|-------------|----------------------------------|-----------------------------------------|
+| **GPU**     | NVIDIA GPU with ≥8GB VRAM        | For running Ollama models locally       |
+| **RAM**     | ≥16GB                            | For loading chat data + model inference |
+| **Disk**    | ~20GB free                       | Model weights + reports storage         |
+| **Ollama**  | v0.1.x+ installed                | Model runtime                           |
+| **Python**  | 3.10+                            | Pipeline scripts                        |
+| **Node.js** | 18+ (optional)                   | If using JS integration module          |
+| **Network** | Local only                       | No external API calls required          |
+
 
 ### 6.3 Integration Steps
 
@@ -288,12 +292,12 @@ All models were benchmarked on the same chat dataset:
 
 ### 7.1 Quantitative Benefits
 
-| Benefit | Impact |
-|---------|--------|
-| **100% coverage** | Every chat is analyzed, not just random samples |
-| **Zero cloud cost** | All processing runs locally via Ollama |
-| **Fast turnaround** | Overnight processing, reports ready by morning |
-| **Structured data** | Machine-readable JSON enables automated alerting |
+| Benefit              | Impact                                              |
+|----------------------|-----------------------------------------------------|
+| **100% coverage**    | Every chat is analyzed, not just random samples     |
+| **Zero cloud cost**  | All processing runs locally via Ollama              |
+| **Fast turnaround**  | Overnight processing, reports ready by morning      |
+| **Structured data**  | Machine-readable JSON enables automated alerting    |
 
 ### 7.2 Business Impact
 
@@ -304,36 +308,38 @@ All models were benchmarked on the same chat dataset:
 
 ### 7.3 Cost Analysis
 
-| Approach | Daily Cost | Scalability |
-|----------|-----------|-------------|
-| Manual review (2 FTEs) | ~$400/day | ❌ Limited to ~200 chats/day |
-| Cloud API (GPT-4) | ~$50–150/day | ⚠️ Scales but expensive |
-| **This solution (Ollama local)** | **~$0/day** | **✅ Full coverage, zero marginal cost** |
+| Approach                               | Daily Cost       | Scalability                                |
+|----------------------------------------|------------------|--------------------------------------------|
+| Manual review (2 FTEs)                 | ~$400/day        | ❌ Limited to ~200 chats/day               |
+| Cloud API (GPT-4)                      | ~$50–150/day     | ⚠️ Scales but expensive                    |
+| **This solution (Ollama local)**       | **~$0/day**      | **✅ Full coverage, zero marginal cost**   |
 
 ---
 
 ## 8. Future Enhancements
 
-| Phase | Enhancement | Description |
-|-------|------------|-------------|
-| **Phase 2** | Dashboard Integration | Real-time quality metrics dashboard |
-| **Phase 2** | Auto-Alerting | Slack/email alerts for critical quality drops |
-| **Phase 3** | Trend Analytics | Weekly/monthly quality trend reports |
-| **Phase 3** | Feedback Loop | Auto-suggest intent improvements based on reports |
-| **Phase 4** | Real-time Analysis | Analyze chats during live sessions (not just end-of-day) |
-| **Phase 4** | Fine-tuned Model | Train a custom model specifically for our chatbot's domain |
+| Phase        | Enhancement           | Description                                                     |
+|--------------|-----------------------|-----------------------------------------------------------------|
+| **Phase 2**  | Dashboard Integration | Real-time quality metrics dashboard                             |
+| **Phase 2**  | Auto-Alerting         | Slack/email alerts for critical quality drops                   |
+| **Phase 3**  | Trend Analytics       | Weekly/monthly quality trend reports                            |
+| **Phase 3**  | Feedback Loop         | Auto-suggest intent improvements based on reports               |
+| **Phase 4**  | Real-time Analysis    | Analyze chats during live sessions (not just end-of-day)        |
+| **Phase 4**  | Fine-tuned Model      | Train a custom model specifically for our chatbot's domain      |
+
 
 ---
 
 ## 9. Risks & Mitigation
 
-| Risk | Impact | Mitigation |
-|------|--------|-----------|
-| Model hallucination in analysis | Medium | Hybrid architecture ensures double-check on flagged sessions |
-| GPU hardware failure | High | Fallback to CPU mode (slower but functional) |
-| Chat data format changes | Medium | Data cleaning layer (`clean_data.py`) abstracts format changes |
-| Model updates breaking output | Low | JSON extraction is robust to minor format variations |
-| Processing time exceeds overnight window | Medium | Batch processing with configurable `BATCH_SIZE` |
+| Risk                                      | Impact | Mitigation                                                     |
+|-------------------------------------------|--------|----------------------------------------------------------------|
+| Model hallucination in analysis           | Medium | Hybrid architecture ensures double-check on flagged sessions   |
+| GPU hardware failure                      | High   | Fallback to CPU mode (slower but functional)                   |
+| Chat data format changes                  | Medium | Data cleaning layer (`clean_data.py`) abstracts format changes |
+| Model updates breaking output             | Low    | JSON extraction is robust to minor format variations           |
+| Processing time exceeds overnight window | Medium  | Batch processing with configurable `BATCH_SIZE`                |
+
 
 ---
 
