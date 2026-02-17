@@ -237,14 +237,14 @@ All models were benchmarked on the same chat dataset:
 │                                                              │
 │  11:00 PM ──► Export day's chat logs from production DB      │
 │                    │                                         │
-│  11:05 PM ──► Run clean_data.py (preprocessing)             │
+│  11:05 PM ──► Run clean_data.py (preprocessing)              │
 │                    │                                         │
-│  11:10 PM ──► Run hybrid_batch.py (quality analysis)        │
+│  11:10 PM ──► Run hybrid_batch.py (quality analysis)         │
 │                    │                                         │
-│  ~2:00 AM ──► Quality reports generated (JSON + CSV)        │
+│  ~2:00 AM ──► Quality reports generated (JSON + CSV)         │
 │                    │                                         │
-│   Next AM ──► Dashboard shows overnight quality metrics     │
-│              ──► Alerts for critical issues (score < 50)    │
+│   Next AM ──► Dashboard shows overnight quality metrics      │
+│              ──► Alerts for critical issues (score < 50)     │
 │              ──► Weekly trend reports auto-generated         │
 └──────────────────────────────────────────────────────────────┘
 ```
